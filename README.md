@@ -1,51 +1,16 @@
-# Abhishek Singh – Flutter Developer 👋
+# port_polio_abhi
 
-Welcome to my official portfolio repository.
+A new Flutter project.
 
-🌐 **Live Portfolio Website**  
-👉 https://abhisinghcpr.github.io
+## Getting Started
 
----
+This project is a starting point for a Flutter application.
 
-## 👨‍💻 About Me
-Hi, I am **Abhishek Singh**, a professional **Flutter Developer from India** 🇮🇳.  
-I specialize in building **Android & iOS mobile applications** using **Flutter & Dart**.
+A few resources to get you started if this is your first Flutter project:
 
-I have experience working with:
-- Firebase Authentication & Firestore
-- REST APIs
-- State Management (GetX / Provider)
-- Clean Architecture & MVC Pattern
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
----
-
-## 🛠 Skills
-- Flutter & Dart  
-- Firebase  
-- REST API Integration  
-- GetX / Provider  
-- Sqflite  
-- Git & GitHub  
-
----
-
-## 📱 Projects
-This repository represents my **personal portfolio website**, where I showcase
-my Flutter projects and development experience.
-
-All projects are developed by  
-**Abhishek Singh – Flutter Developer**
-
----
-
-## 🔗 Connect With Me
-- 🌐 Portfolio: https://abhisinghcpr.github.io  
-- 💻 GitHub: https://github.com/abhisinghcpr  
-
----
-
-## 🔍 Keywords (For Google Search)
-Abhishek Singh Flutter Developer  
-Flutter Developer India  
-Mobile App Developer Abhishek Singh  
-Flutter Portfolio Abhishek Singh
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
