@@ -1475,57 +1475,88 @@ class Footer extends StatelessWidget {
       ),
       child: Column(
         children: [
+          /// 🔹 NAME (SEO + AUTHOR SIGNAL)
           const Text(
             "Abhishek Singh",
-            style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold, color: AppColors.primary),
+            semanticsLabel:
+            "Abhishek Singh Flutter Developer Portfolio Website",
+            style: TextStyle(
+              fontSize: 28,
+              fontWeight: FontWeight.bold,
+              color: AppColors.primary,
+            ),
           ),
+
           const SizedBox(height: 10),
+
+          /// 🔹 KEYWORD-RICH TAGLINE (NO UI CHANGE)
           Text(
-            "Flutter Developer • Mobile App Specialist • Clean Code Advocate",
+            "Flutter Developer • Flutter Web Developer • Mobile App Specialist • Firebase Expert",
             textAlign: TextAlign.center,
             style: TextStyle(
               color: AppColors.textSecondary,
               fontSize: isMobile ? 14 : 16,
             ),
           ),
+
           const SizedBox(height: 20),
+
+          /// 🔹 SOCIAL LINKS (AUTHOR AUTHORITY)
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               SocialIcon(
                 icon: Icons.code,
-                tooltip: "GitHub",
-                onTap: () => html.window.open("https://github.com", "_blank"),
+                tooltip: "Abhishek Singh GitHub Profile",
+                onTap: () => html.window.open(
+                  "https://github.com/abhisinghcpr",
+                  "_blank",
+                ),
               ),
               const SizedBox(width: 15),
               SocialIcon(
                 icon: Icons.person,
-                tooltip: "LinkedIn",
-                onTap: () => html.window.open("https://www.linkedin.com/in/abhishek-singh-flutter/", "_blank"),
+                tooltip: "Abhishek Singh LinkedIn Profile",
+                onTap: () => html.window.open(
+                  "https://www.linkedin.com/in/abhishek-singh-flutter/",
+                  "_blank",
+                ),
               ),
               const SizedBox(width: 15),
               SocialIcon(
                 icon: Icons.mail,
-                tooltip: "Email",
-                onTap: () => html.window.open("mailto:abhisingh852161@gmail.com", "_blank"),
+                tooltip: "Email Abhishek Singh Flutter Developer",
+                onTap: () => html.window.open(
+                  "mailto:abhisingh852161@gmail.com",
+                  "_blank",
+                ),
               ),
               const SizedBox(width: 15),
               SocialIcon(
                 icon: Icons.phone,
-                tooltip: "WhatsApp",
-                onTap: () => html.window.open("https://wa.me/918521616449", "_blank"),
+                tooltip: "WhatsApp Abhishek Singh Flutter Developer",
+                onTap: () => html.window.open(
+                  "https://wa.me/918521616449",
+                  "_blank",
+                ),
               ),
             ],
           ),
+
           const SizedBox(height: 20),
+
+          /// 🔹 COPYRIGHT (SEO FRIENDLY)
           Text(
-            "© 2024 Abhishek Singh. All rights reserved.",
+            "© 2024 Abhishek Singh – Flutter Developer Portfolio",
             style: TextStyle(
               color: Colors.white24,
               fontSize: isMobile ? 10 : 12,
             ),
           ),
+
           const SizedBox(height: 5),
+
+          /// 🔹 TRUST SIGNAL
           Text(
             "Built with Flutter • Hosted on GitHub Pages",
             style: TextStyle(
