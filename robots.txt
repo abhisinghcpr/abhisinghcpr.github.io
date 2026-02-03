@@ -1,0 +1,6 @@
+User-agent: * 
+Allow: / 
+Disallow: /canvaskit/ 
+Disallow: /flutter_service_worker.js 
+Disallow: /flutter.js 
+Sitemap: https://abhisinghcpr.github.io/sitemap.xml 
