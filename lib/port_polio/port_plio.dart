@@ -766,7 +766,6 @@ class HeroSection extends StatelessWidget {
     );
 
     return Container(
-      key: key,
       width: double.infinity,
       padding: EdgeInsets.symmetric(
         horizontal: isMobile ? 20 : (isTablet ? 40 : 80),
@@ -954,7 +953,6 @@ class AboutSection extends StatelessWidget {
     final isTablet = screenWidth >= 768 && screenWidth < 1024;
 
     return ResponsiveSection(
-      key: key,
       title: "About Me",
       screenWidth: screenWidth,
       child: isMobile
@@ -1226,7 +1224,6 @@ class ExperienceSection extends StatelessWidget {
     final isMobile = screenWidth < 768;
 
     return ResponsiveSection(
-      key: key,
       title: "Professional Journey",
       screenWidth: screenWidth,
       child: Column(
@@ -1288,7 +1285,6 @@ class SkillsSection extends StatelessWidget {
     final isMobile = screenWidth < 768;
 
     return ResponsiveSection(
-      key: key,
       title: "Technical Expertise",
       screenWidth: screenWidth,
       child: Column(
@@ -1591,7 +1587,6 @@ class EducationSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ResponsiveSection(
-      key: key,
       title: "Education & Certifications",
       screenWidth: screenWidth,
       child: Column(
@@ -1763,7 +1758,6 @@ class ContactSection extends StatelessWidget {
     final isMobile = screenWidth < 768;
 
     return ResponsiveSection(
-      key: key,
       title: "Let's Connect",
       screenWidth: screenWidth,
       child: isMobile
