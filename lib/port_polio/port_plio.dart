@@ -2552,18 +2552,36 @@ class _AnimatedProjectCardState extends State<AnimatedProjectCard> {
         widget.image.startsWith('data:image');
   }
 
-  /// 🔹 Handles Network + Base64 + Asset images
+  /// 🔹 Handles Network + Base64 + Asset images with CORS proxy support
   Widget _buildImage() {
     if (_isNetworkImage) {
+      String imageUrl = widget.image;
+      if (imageUrl.startsWith('http://') || imageUrl.startsWith('https://')) {
+        imageUrl = 'https://images.weserv.nl/?url=${Uri.encodeComponent(imageUrl)}';
+      }
       return CachedNetworkImage(
-        imageUrl: widget.image,
+        imageUrl: imageUrl,
         width: double.infinity,
         height: double.infinity,
         fit: BoxFit.cover,
         placeholder: (context, url) =>
             const CupertinoActivityIndicator(radius: 2),
-        errorWidget: (context, url, error) =>
-            const Icon(Icons.image_not_supported),
+        errorWidget: (context, url, error) => CachedNetworkImage(
+          imageUrl: widget.image,
+          width: double.infinity,
+          height: double.infinity,
+          fit: BoxFit.cover,
+          errorWidget: (context, url, error) => Container(
+            color: AppColors.cardBg,
+            child: const Center(
+              child: Icon(
+                Icons.image_outlined,
+                size: 40,
+                color: AppColors.textSecondary,
+              ),
+            ),
+          ),
+        ),
       );
     }
 
